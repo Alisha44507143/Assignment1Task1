@@ -1,0 +1,32 @@
+ubuntu@ip-172-31-18-18:~$ nano pass.py
+
+import datetime
+
+d = int(input("Enter the date"))
+m = int(input("Enter the month"))
+try:
+ CurrentDate = datetime.datetime(day = d,month = m ,year = 1900)
+ start = datetime.datetime.strptime("20-03","%d-%m")
+ end = datetime.datetime.strptime("20-06","%d-%m")
+
+ if start <= CurrentDate <= end:
+  print ("True")
+ else:
+  print ("False")
+
+except ValueError:
+ print('out')
+
+ubuntu@ip-172-31-18-18:~$ python3 pass.py
+Enter the date25
+Enter the month7
+False
+
+ubuntu@ip-172-31-18-18:~$ python3 pass.py
+Enter the date30
+Enter the month4
+True
+ubuntu@ip-172-31-18-18:~$ python3 pass.py
+Enter the date45
+Enter the month2
+out
