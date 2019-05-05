@@ -1,0 +1,9 @@
+ubuntu@ip-172-31-18-18:~$ nano twain.py
+with open('twain.txt') as f:
+ newText=f.read().replace('Huck','HucK')
+
+with open('twain.txt',"w") as f:
+ f.write(newText)
+
+ubuntu@ip-172-31-18-18:~$ python3 twain.py
+ubuntu@ip-172-31-18-18:~$ sudo less twain.txt #this will show the updated file txt
