@@ -1,0 +1,20 @@
+ubuntu@ip-172-31-18-18:~$ python3 userargument.py Python
+		Hi, 	
+		Python
+		. How are you?
+ubuntu@ip-172-31-18-18:~$ python3 userargument.py @!&^%
+		-bash: !: event not found
+ubuntu@ip-172-31-18-18:~$ python3 userargument.py 1234
+		Hi, 
+		1234
+		. How are you?
+ubuntu@ip-172-31-18-18:~$ python3 userargument.py Bob
+		Hi, 
+		Bob
+		. How are you?
+ubuntu@ip-172-31-18-18:~$ user.py Bob
+	user.py: command not found
+ubuntu@ip-172-31-18-18:~$ python3 userargument.py Alice Bob
+	Hi, 
+	Alice
+	. How are you?
