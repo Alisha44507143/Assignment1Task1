@@ -1,0 +1,13 @@
+ubuntu@ip-172-31-18-18:~$ nano ra.py
+
+x=int(input("Enter a"))
+y=int(input("Enter b"))
+
+import random
+result= random.randint(x,y)
+print(result);
+
+ubuntu@ip-172-31-18-18:~$ python3 ra.py
+Enter a 10
+Enter b 100
+43
