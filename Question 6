@@ -1,0 +1,16 @@
+ubuntu@ip-172-31-18-18:~$ nano amount.py
+
+r = float(input("Enter the rate of interest"))
+i=r/100
+t = int(input("Enter the number of years"))
+p = float(input("Enter the principal amount"))
+y= float(i*t)
+import math
+amount= p * math.exp(y)
+print(amount);
+
+ubuntu@ip-172-31-18-18:~$ python3 amount.py
+Enter the rate of interest0.04
+Enter the number of years2
+Enter the principal amount100
+108.32870676749586
