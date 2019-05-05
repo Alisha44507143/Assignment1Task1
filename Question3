@@ -1,0 +1,9 @@
+ubuntu@ip-172-31-18-18:~$ nano leapyear.py
+
+x=int(input("Enter a value"))
+result= "True" if x%400==0 else "True" if x%4==0 and x%100!=0 else "False"
+print(result);
+
+ubuntu@ip-172-31-18-18:~$ python3 leapyear.py
+Enter a value2004
+True
